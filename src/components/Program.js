@@ -1,0 +1,32 @@
+import { FaCrown } from "react-icons/fa";
+import SectionHead from "./SectionHead";
+import { programs } from "../data";
+import Card from "../UI/Card";
+import { Link } from "react-router-dom";
+import "../pages/home/home.css";
+
+const Program = () => {
+  return (
+    <section className="programs">
+      <div className="container program__container">
+        <SectionHead icon={<FaCrown />} title="programs" />
+        <div className="programs__wrapper">
+          {programs.map(({ id, icon, title, info, path }) => {
+            return (
+              <Card className="programs__program" key={id}>
+                <span>{icon}</span>
+                <h4>{title}</h4>
+                <small>{info}</small>
+                <Link to={path} className="btn btn__sm">
+                  Learn More✍️
+                </Link>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Program;

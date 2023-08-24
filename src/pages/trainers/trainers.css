@@ -1,0 +1,45 @@
+.trainers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.trainer h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary-varient);
+  margin-top: 1rem;
+}
+.trainer p {
+  font-size: 0.9rem;
+}
+.trainer__socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4rem;
+}
+.trainer__socials a {
+  background: var(--color-secondary);
+  padding: 0.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+}
+.trainer__socials a:hover {
+  color: var(--color-primary-varient);
+}
+
+/* media queries for medium devices */
+@media screen and (max-width: 1024px) {
+  .trainers__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* media queries for small devices */
+@media screen and (max-width: 600px) {
+  .trainers__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
