@@ -1,63 +1,84 @@
 import "./about.css";
-import image from "../../images/header_bg_1.jpg";
-import Header from "../../components/Header";
-import storyImg from "../../images/story.jpg";
-import missionImg from "../../images/about3.jpg";
-import SectionHead from "../../components/SectionHead";
-import { LuHistory } from "react-icons/lu";
-const About = () => {
+import story1 from "../../images/story1.jpg";
+import story2 from "../../images/story2.jpg";
+import story3 from "../../images/story3.jpg";
+import story4 from "../../images/story4.jpg";
+import { useEffect } from "react";
+
+const About = ({ setNavColor }) => {
+  useEffect(() => {
+    setNavColor("#000");
+  }, [setNavColor]);
   return (
     <div className="about">
-      <Header title="about us" image={image}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        doloribus obcaecati dolores repudiandae ex explicabo praesentium ad
-        maxime nostrum nihil.
-      </Header>
       <section>
         <div className="container story__container">
           <div className="story__left">
-            <img src={storyImg} alt="" />
+            <img src={story1} alt="" />
           </div>
           <div className="story__right">
-            <SectionHead icon={<LuHistory />} title="Our Story" />
+            <h3>
+              A Child's Leg is Saved with the Help of Integra Dermal
+              Regeneration Template (IDRT)
+            </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, voluptatum. Rerum, molestias harum iste doloribus,
-              amet ratione laudantium numquam voluptatem nisi ipsam fugit sint
-              nemo quasi incidunt illo totam deserunt!
+              Margo Casselman was only 8 years old in 2000 when a horrific car
+              accident nearly led to the amputation of her leg. Her leg was
+              broken in numerous places, and her skin had been stripped from the
+              muscles and bones underneath. For most doctors who examined her,
+              amputation of her injured leg seemed the only option. But Margo’s
+              parents were determined to save her leg if possible.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, voluptatum. Rerum, molestias harum iste doloribus,
-              amet ratione laudantium numquam voluptatem nisi ipsam fugit sint
-              nemo quasi incidunt illo totam deserunt! amet ratione laudantium
-              numquam voluptatem nisi ipsam fugit sint nemo quasi incidunt illo
-              totam deserunt!
-            </p>
+            <button className="btn">Learn More</button>
           </div>
         </div>
       </section>
       <section>
         <div className="container story__container">
           <div className="story__right ">
-            <SectionHead icon={<LuHistory />} title="Our Mission" />
+            <h3>Changing Lives. Building Careers.</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, voluptatum. Rerum, molestias harum iste doloribus,
-              amet ratione laudantium numquam voluptatem nisi ipsam fugit sint
-              nemo quasi incidunt illo totam deserunt!
+              Joining us is a chance for you to do important work that creates
+              change and shapes the future of healthcare. Thinking differently
+              is what we do best. To us, change equals opportunity.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, voluptatum. Rerum, molestias harum iste doloribus,
-              amet ratione laudantium numquam voluptatem nisi ipsam fugit sint
-              nemo quasi incidunt illo totam deserunt! amet ratione laudantium
-              numquam voluptatem nisi ipsam fugit sint nemo quasi incidunt illo
-              totam deserunt!
-            </p>
+            <button className="btn">Learn More</button>
           </div>
           <div className="story__left">
-            <img src={missionImg} alt="" />
+            <img src={story2} alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container story__container">
+          <div className="story__left">
+            <img src={story3} alt="" />
+          </div>
+          <div className="story__right">
+            <h3>Discover our Latest Innovations in Hydrocephalus Treatment</h3>
+            <p>
+              Idiopathic Normal Pressure Hydrocephalus (iNPH) symptoms may be
+              reversible by CSF shunt therapy. Our programmable valves allow for
+              optimized and customized treatment for each individual patient.
+            </p>
+            <button className="btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container story__container">
+          <div className="story__right ">
+            <h3>Explore the Breadth and Depth of our Tissue Products</h3>
+            <p>
+              Integra delivers broader and deeper solutions with an extensive
+              soft tissue reconstruction portfolio. Discover our comprehensive
+              solutions in tissue regeneration for acute and chronic complex
+              wounds and burns.
+            </p>
+            <button className="btn">Learn More</button>
+          </div>
+          <div className="story__left">
+            <img src={story4} alt="" />
           </div>
         </div>
       </section>

@@ -3,19 +3,27 @@
   grid-template-columns: 40% 50%;
   gap: 10%;
   place-items: center;
+  
 }
 .story__left img {
-  border-radius: 50%;
+  width: 28rem;
+  height: 30rem;
+  background-position: left;
+  object-fit: cover;
   transition: var(--transition);
   cursor: pointer;
 }
 .story__left img:hover {
   transform: scale(1.1);
 }
-
+.story__right h3{
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--color-primary-varient);
+}
 .story__right p {
-  color: var(--color-light);
-  margin-top: 2rem;
+  color: var(--color-black-varient);
+  margin: 2rem 0;
   font-size: 1rem;
 }
 

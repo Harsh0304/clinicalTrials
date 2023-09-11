@@ -1,7 +1,7 @@
 nav {
   height: 5rem;
   width: 100vw;
-  background: var(--color-bg-1);
+  /* background: var(--color-bg-1); */
   display: grid;
   place-items: center;
   position: fixed;
@@ -20,18 +20,27 @@ nav {
   position: relative;
 }
 .logo {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .logo h3 span {
   color: var(--color-primary-varient);
+  font-weight: 700;
 }
 .nav__links {
   display: flex;
-  gap: 3.5rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  
 }
-/* .active {
+.nav__links li a:hover {
   color: var(--color-primary);
-} */
+  font-weight: 700;
+}
+.btn__sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+}
 
 /* media queries for small and medium devices */
 @media screen and (max-width: 1024px) {

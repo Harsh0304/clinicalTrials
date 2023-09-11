@@ -1,16 +1,14 @@
-import FAQs from "../../components/FAQs";
+import { useEffect } from "react";
 import MainHeader from "../../components/MainHeader";
-import Program from "../../components/Program";
-import Values from "../../components/Values";
 import "./home.css";
 
-const Home = () => {
+const Home = ({ setNavColor }) => {
+  useEffect(() => {
+    setNavColor("#fff");
+  }, [setNavColor]);
   return (
     <>
       <MainHeader />
-      <Program />
-      <Values />
-      <FAQs />
     </>
   );
 };

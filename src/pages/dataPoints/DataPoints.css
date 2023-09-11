@@ -1,0 +1,15 @@
+/* .bottom__nav-container{
+    display: grid;
+    place-items: center;
+} */
+
+.bottom__nav-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 6rem;
+    
+}
