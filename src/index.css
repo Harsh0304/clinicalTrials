@@ -76,6 +76,9 @@ img {
   width: 100%;
 }
 
+.programs{
+  height: 100vh;
+}
 
 .btn {
   display: inline-block;
