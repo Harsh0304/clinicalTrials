@@ -26,26 +26,11 @@ const Program = ({ currentUser }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <h4>Data Source</h4>
+              <h4>Digital ClinOps</h4>
             </a>
           </Card>
           <Card className="programs__program">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://app.powerbi.com/groups/me/reports/48460cf8-b9f2-4225-8395-8652c0eca0ec/ReportSectionce788b5542d68f05aa47?experience=power-bi"
-            >
-              <h4>Report And Charts</h4>
-            </a>
-          </Card>
-
-          <input id="model" type="file" multiple onChange={handlefile} hidden />
-          <label htmlFor="model">
-            <Card className="programs__program">Model Excel (Upload)</Card>
-          </label>
-
-          {/* <Card className="programs__program">
-            CTFP Analytics
+            Dashboard
             <span onClick={() => setShowActions(!showActions)}>
               <BiDotsVerticalRounded />
             </span>
@@ -58,11 +43,34 @@ const Program = ({ currentUser }) => {
             />
             {showActions && (
               <div className="program__actions">
-                <label htmlFor="CTFP">Upload</label>
-                <Link>Run</Link>
+                {/* <label htmlFor="CTFP">CTFP</label>
+                <label htmlFor="CTFP">DM</label>
+                <label htmlFor="CTFP">Outreach</label>
+                <label htmlFor="CTFP">Outreach</label>
+                <label htmlFor="CTFP">DOA</label> */}
+                <Link>CTFP Analytics</Link>
+                <Link>DM</Link>
+                <Link>Budget and Finance</Link>
+                <Link>Starup</Link>
+                <Link>DOA</Link>
+                <Link>Executive summary</Link>
               </div>
             )}
+          </Card>
+          {/* <Card className="programs__program">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://app.powerbi.com/groups/me/reports/48460cf8-b9f2-4225-8395-8652c0eca0ec/ReportSectionce788b5542d68f05aa47?experience=power-bi"
+            >
+              <h4>Dashboard</h4>
+            </a>
           </Card> */}
+
+          <input id="model" type="file" multiple onChange={handlefile} hidden />
+          <label htmlFor="model">
+            <Card className="programs__program">Model Excel (Upload)</Card>
+          </label>
         </div>
       </div>
     </section>
