@@ -76,9 +76,9 @@ img {
   width: 100%;
 }
 
-.programs{
+/* .programs{
   height: 100vh;
-}
+} */
 
 .btn {
   display: inline-block;
@@ -104,7 +104,7 @@ img {
 } */
 
 section {
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 /* heading */
