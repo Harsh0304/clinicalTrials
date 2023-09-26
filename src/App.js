@@ -68,12 +68,11 @@ const App = () => {
         <Route
           path="/data-points"
           element={<DataPoints setNavColor={setNavColor} />}
-        >
-          <Route path="outreach" element={<Outreach />} />
+        />
+        {/* <Route path="outreach" element={<Outreach />} />
           <Route path="startup" element={<StartUp />} />
           <Route path="DOA" element={<DOA />} />
-          <Route path="accrual" element={<Accrual />} />
-        </Route>
+          <Route path="accrual" element={<Accrual />} /> */}
 
         <Route path="*" element={<NotFound />} />
       </Routes>
