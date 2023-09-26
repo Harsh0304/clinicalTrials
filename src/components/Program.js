@@ -48,7 +48,13 @@ const Program = ({ currentUser }) => {
                 <label htmlFor="CTFP">Outreach</label>
                 <label htmlFor="CTFP">Outreach</label>
                 <label htmlFor="CTFP">DOA</label> */}
-                <Link>CTFP Analytics</Link>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://app.powerbi.com/groups/me/reports/48460cf8-b9f2-4225-8395-8652c0eca0ec/ReportSectionce788b5542d68f05aa47?experience=power-bi"
+                >
+                  CTFP Analytics
+                </a>
                 <Link>DM</Link>
                 <Link>Budget and Finance</Link>
                 <Link>Starup</Link>
