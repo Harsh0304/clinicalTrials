@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaCrown } from "react-icons/fa";
 import SectionHead from "./SectionHead";
 import Card from "../UI/Card";
-import { BiDotsVerticalRounded } from "react-icons/bi";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 import "../pages/home/home.css";
 
 const Program = ({ currentUser }) => {
@@ -32,22 +32,17 @@ const Program = ({ currentUser }) => {
           <Card className="programs__program">
             Dashboard
             <span onClick={() => setShowActions(!showActions)}>
-              <BiDotsVerticalRounded />
+              <IoIosArrowDropdownCircle />
             </span>
             <input
               id="CTFP"
-              type="file"
+              type="dropdown"
               multiple
               onChange={handlefile}
               hidden
             />
             {showActions && (
               <div className="program__actions">
-                {/* <label htmlFor="CTFP">CTFP</label>
-                <label htmlFor="CTFP">DM</label>
-                <label htmlFor="CTFP">Outreach</label>
-                <label htmlFor="CTFP">Outreach</label>
-                <label htmlFor="CTFP">DOA</label> */}
                 <a
                   target="_blank"
                   rel="noreferrer"

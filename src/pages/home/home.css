@@ -72,9 +72,9 @@ header {
 }
 .programs__program span{
   position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 2rem;
+  top: 25px;
+  right: 52px;
+  font-size: 1.8rem;
 }
 .programs__program h4{
   color: var(--color-white);
@@ -86,8 +86,9 @@ header {
   background: var(--color-white);
   padding: 1rem 1rem;
   position: absolute;
-  top: 3rem;
-  right: 1rem;
+  top: 4.5rem;
+  right: 3rem;
+  border-radius: 1rem;
   color: var(--color-black);
   z-index: 99;
   display: flex;
